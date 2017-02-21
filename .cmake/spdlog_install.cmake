@@ -1,5 +1,1 @@
-file(GLOB SPD_HEADERS
-  "${SPD_BUILD_DIR}/include/spdlog/*.h"
-)
-
-file (COPY ${SPD_HEADERS} DESTINATION ${CMAKE_INSTALL_PREFIX}/include/spdlog)
+file (COPY ${SPD_BUILD_DIR}/include/ DESTINATION ${CMAKE_INSTALL_PREFIX}/include/)

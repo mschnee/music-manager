@@ -1,5 +1,5 @@
-#include "uWS\uWS.h"
-#include "spdlog\spdlog.h"
+#include "uWS/uWS.h"
+#include "spdlog/spdlog.h"
 
 namespace spd = spdlog;
 

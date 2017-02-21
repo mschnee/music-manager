@@ -15,23 +15,48 @@ include(./.cmake/uwebsockets.cmake)
 include(./.cmake/spdlog.cmake)
 ## Resume please
 
-include_directories(${CMAKE_INSTALL_PREFIX}/include ${CMAKE_INSTALL_PREFIX}/include ${LIBUV_INCLUDE_DIR})
+include_directories(${CMAKE_INSTALL_PREFIX}/include ${LIBUV_INCLUDE_DIR})
 set(SOURCES)
 set(SOURCES ${SOURCES} "Core/src/demo.cpp")
 
 link_directories(${CMAKE_INSTALL_PREFIX}/lib ${CMAKE_INSTALL_PREFIX}/lib ${CMAKE_INSTALL_PREFIX}/usr/lib64)
 
 # ==============================================================================
-# Setup targets
+# Create the target
 # ==============================================================================
 add_executable(demo ${SOURCES})
-add_dependencies(demo uWebSockets-0.13.0a4 zlib-1.2.11 openssl-1.0.2k libuv-1.11.0 spdlog)
-target_link_libraries(demo
-    uWS ws2_32 advapi32 iphlpapi shell32
-    ${LIBUV_LIBRARY} ${CMAKE_INSTALL_PREFIX}/lib/libeay32.lib
-    ${CMAKE_INSTALL_PREFIX}/lib/ssleay32.lib
-    ${CMAKE_INSTALL_PREFIX}/lib/zlibd.lib
-)
+
+# ==============================================================================
+# Setup targets
+# ==============================================================================
+if (WIN32)
+    set(APP_DEPENDENCIES uWebSockets-0.13.0a4 zlib-1.2.11 openssl-1.0.2k libuv-1.11.0 spdlog)
+    set(APP_LIBRARIES 
+        uWS ws2_32 advapi32 iphlpapi shell32
+        ${LIBUV_LIBRARY}
+        ${CMAKE_INSTALL_PREFIX}/lib/libeay32.lib
+        ${CMAKE_INSTALL_PREFIX}/lib/ssleay32.lib
+        ${CMAKE_INSTALL_PREFIX}/lib/zlibd.lib
+    )
+else(UNIX AND APPLE)
+    find_package(OpenSSL REQUIRED)
+    find_package(ZLIB REQUIRED)
+    set(APP_DEPENDENCIES uWebSockets-0.13.0a4 libuv-1.11.0 spdlog)
+    set(APP_LIBRARIES uWS
+        ${CMAKE_INSTALL_PREFIX}/lib/libuv.dylib
+        ${OPENSSL_SSL_LIBRARY}
+        ${OPENSSL_CRYPTO_LIBRARY}
+        ${ZLIB_LIBRARY}
+    )
+endif()
+
+get_property(dirs DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR} PROPERTY INCLUDE_DIRECTORIES)
+foreach(dir ${dirs})
+    message(STATUS "dir=${dir}")
+endforeach()
+
+add_dependencies(demo ${APP_DEPENDENCIES})
+target_link_libraries(demo ${APP_LIBRARIES})
 
 set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_INSTALL_PREFIX}/lib)
 set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_INSTALL_PREFIX}/lib)
