@@ -6,5 +6,944 @@
     },
     "description": "Emit debug information without performing optimizations"
   },
-  "activeEnvironments": []
+  "activeEnvironments": [],
+  "codeModel": {
+    "configurations": [
+      {
+        "name": "Debug",
+        "projects": [
+          {
+            "buildDirectory": "C:/Users/Matthew/Projects/music-player/build",
+            "name": "music-manager-core",
+            "sourceDirectory": "C:/Users/Matthew/Projects/music-player",
+            "targets": [
+              {
+                "artifacts": [
+                  "C:/Users/Matthew/Projects/music-player/dist/bin/demo.exe",
+                  "C:/Users/Matthew/Projects/music-player/dist/lib/demo.lib",
+                  "C:/Users/Matthew/Projects/music-player/dist/bin/demo.pdb"
+                ],
+                "buildDirectory": "C:/Users/Matthew/Projects/music-player/build",
+                "fileGroups": [
+                  {
+                    "compileFlags": "/DWIN32 /D_WINDOWS /W3 /GR /EHsc /D_DEBUG /MDd /Zi /Ob0 /Od /RTC1  ",
+                    "includePath": [
+                      {
+                        "path": "C:/Users/Matthew/Projects/music-player/dist/include"
+                      },
+                      {
+                        "path": "C:/Users/Matthew/Projects/music-player/dist/include/uv"
+                      }
+                    ],
+                    "isGenerated": false,
+                    "language": "CXX",
+                    "sources": [
+                      "Core/src/demo.cpp"
+                    ]
+                  },
+                  {
+                    "isGenerated": false,
+                    "sources": [
+                      "CMakeLists.txt"
+                    ]
+                  }
+                ],
+                "fullName": "demo.exe",
+                "linkFlags": "/machine:x64 /debug /INCREMENTAL /subsystem:console",
+                "linkLanguageFlags": "/DWIN32 /D_WINDOWS /W3 /GR /EHsc /D_DEBUG /MDd /Zi /Ob0 /Od /RTC1",
+                "linkLibraries": "uWS.lib ws2_32.lib advapi32.lib iphlpapi.lib shell32.lib ..\\dist\\lib\\libuv.lib ..\\dist\\lib\\libeay32.lib ..\\dist\\lib\\ssleay32.lib ..\\dist\\lib\\zlibd.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib",
+                "linkPath": "-LIBPATH:C:\\Users\\Matthew\\Projects\\music-player\\dist\\lib  -LIBPATH:C:\\Users\\Matthew\\Projects\\music-player\\dist\\usr\\lib64",
+                "linkerLanguage": "CXX",
+                "name": "demo",
+                "sourceDirectory": "C:/Users/Matthew/Projects/music-player",
+                "type": "EXECUTABLE"
+              },
+              {
+                "buildDirectory": "C:/Users/Matthew/Projects/music-player/build",
+                "fileGroups": [
+                  {
+                    "isGenerated": true,
+                    "sources": [
+                      "build/CMakeFiles/uWebSockets-0.13.0a4",
+                      "build/CMakeFiles/01d73a133cac712ca9876768b1443a94/uWebSockets-0.13.0a4.rule",
+                      "build/CMakeFiles/cfc21692ef3774cc5ed4bb2472429a10/uWebSockets-0.13.0a4-complete.rule",
+                      "build/CMakeFiles/74620508dcadc10155c4598204e51f98/uWebSockets-0.13.0a4-install.rule",
+                      "build/CMakeFiles/74620508dcadc10155c4598204e51f98/uWebSockets-0.13.0a4-mkdir.rule",
+                      "build/CMakeFiles/74620508dcadc10155c4598204e51f98/uWebSockets-0.13.0a4-download.rule",
+                      "build/CMakeFiles/74620508dcadc10155c4598204e51f98/uWebSockets-0.13.0a4-update.rule",
+                      "build/CMakeFiles/74620508dcadc10155c4598204e51f98/uWebSockets-0.13.0a4-patch.rule",
+                      "build/CMakeFiles/74620508dcadc10155c4598204e51f98/uWebSockets-0.13.0a4-configure.rule",
+                      "build/CMakeFiles/74620508dcadc10155c4598204e51f98/uWebSockets-0.13.0a4-build.rule"
+                    ]
+                  },
+                  {
+                    "isGenerated": false,
+                    "sources": [
+                      "CMakeLists.txt"
+                    ]
+                  }
+                ],
+                "fullName": "uWebSockets-0.13.0a4",
+                "name": "uWebSockets-0.13.0a4",
+                "sourceDirectory": "C:/Users/Matthew/Projects/music-player",
+                "type": "UTILITY"
+              },
+              {
+                "buildDirectory": "C:/Users/Matthew/Projects/music-player/build",
+                "fileGroups": [
+                  {
+                    "isGenerated": true,
+                    "sources": [
+                      "build/CMakeFiles/zlib-1.2.11",
+                      "build/CMakeFiles/01d73a133cac712ca9876768b1443a94/zlib-1.2.11.rule",
+                      "build/CMakeFiles/cfc21692ef3774cc5ed4bb2472429a10/zlib-1.2.11-complete.rule",
+                      "build/CMakeFiles/2d166d9736c6081f7db04657dfbc5c4e/zlib-1.2.11-install.rule",
+                      "build/CMakeFiles/2d166d9736c6081f7db04657dfbc5c4e/zlib-1.2.11-mkdir.rule",
+                      "build/CMakeFiles/2d166d9736c6081f7db04657dfbc5c4e/zlib-1.2.11-download.rule",
+                      "build/CMakeFiles/2d166d9736c6081f7db04657dfbc5c4e/zlib-1.2.11-update.rule",
+                      "build/CMakeFiles/2d166d9736c6081f7db04657dfbc5c4e/zlib-1.2.11-patch.rule",
+                      "build/CMakeFiles/2d166d9736c6081f7db04657dfbc5c4e/zlib-1.2.11-configure.rule",
+                      "build/CMakeFiles/2d166d9736c6081f7db04657dfbc5c4e/zlib-1.2.11-build.rule"
+                    ]
+                  },
+                  {
+                    "isGenerated": false,
+                    "sources": [
+                      "CMakeLists.txt"
+                    ]
+                  }
+                ],
+                "fullName": "zlib-1.2.11",
+                "name": "zlib-1.2.11",
+                "sourceDirectory": "C:/Users/Matthew/Projects/music-player",
+                "type": "UTILITY"
+              },
+              {
+                "buildDirectory": "C:/Users/Matthew/Projects/music-player/build",
+                "fileGroups": [
+                  {
+                    "isGenerated": true,
+                    "sources": [
+                      "build/CMakeFiles/spdlog",
+                      "build/CMakeFiles/01d73a133cac712ca9876768b1443a94/spdlog.rule",
+                      "build/CMakeFiles/cfc21692ef3774cc5ed4bb2472429a10/spdlog-complete.rule",
+                      "build/CMakeFiles/4d6ce8cd9a8b5433f9ee684fc084447e/spdlog-install.rule",
+                      "build/CMakeFiles/4d6ce8cd9a8b5433f9ee684fc084447e/spdlog-mkdir.rule",
+                      "build/CMakeFiles/4d6ce8cd9a8b5433f9ee684fc084447e/spdlog-download.rule",
+                      "build/CMakeFiles/4d6ce8cd9a8b5433f9ee684fc084447e/spdlog-update.rule",
+                      "build/CMakeFiles/4d6ce8cd9a8b5433f9ee684fc084447e/spdlog-patch.rule",
+                      "build/CMakeFiles/4d6ce8cd9a8b5433f9ee684fc084447e/spdlog-configure.rule",
+                      "build/CMakeFiles/4d6ce8cd9a8b5433f9ee684fc084447e/spdlog-build.rule"
+                    ]
+                  },
+                  {
+                    "isGenerated": false,
+                    "sources": [
+                      "CMakeLists.txt"
+                    ]
+                  }
+                ],
+                "fullName": "spdlog",
+                "name": "spdlog",
+                "sourceDirectory": "C:/Users/Matthew/Projects/music-player",
+                "type": "UTILITY"
+              },
+              {
+                "buildDirectory": "C:/Users/Matthew/Projects/music-player/build",
+                "fileGroups": [
+                  {
+                    "isGenerated": true,
+                    "sources": [
+                      "build/CMakeFiles/libuv-1.11.0",
+                      "build/CMakeFiles/01d73a133cac712ca9876768b1443a94/libuv-1.11.0.rule",
+                      "build/CMakeFiles/cfc21692ef3774cc5ed4bb2472429a10/libuv-1.11.0-complete.rule",
+                      "build/CMakeFiles/b4e225435aee309534b256b3a044728b/libuv-1.11.0-install.rule",
+                      "build/CMakeFiles/b4e225435aee309534b256b3a044728b/libuv-1.11.0-mkdir.rule",
+                      "build/CMakeFiles/b4e225435aee309534b256b3a044728b/libuv-1.11.0-download.rule",
+                      "build/CMakeFiles/b4e225435aee309534b256b3a044728b/libuv-1.11.0-update.rule",
+                      "build/CMakeFiles/b4e225435aee309534b256b3a044728b/libuv-1.11.0-patch.rule",
+                      "build/CMakeFiles/b4e225435aee309534b256b3a044728b/libuv-1.11.0-configure.rule",
+                      "build/CMakeFiles/b4e225435aee309534b256b3a044728b/libuv-1.11.0-build.rule"
+                    ]
+                  },
+                  {
+                    "isGenerated": false,
+                    "sources": [
+                      "CMakeLists.txt"
+                    ]
+                  }
+                ],
+                "fullName": "libuv-1.11.0",
+                "name": "libuv-1.11.0",
+                "sourceDirectory": "C:/Users/Matthew/Projects/music-player",
+                "type": "UTILITY"
+              },
+              {
+                "buildDirectory": "C:/Users/Matthew/Projects/music-player/build",
+                "fileGroups": [
+                  {
+                    "isGenerated": true,
+                    "sources": [
+                      "build/CMakeFiles/01d73a133cac712ca9876768b1443a94/generate.stamp.rule"
+                    ]
+                  }
+                ],
+                "fullName": "ZERO_CHECK",
+                "name": "ZERO_CHECK",
+                "sourceDirectory": "C:/Users/Matthew/Projects/music-player",
+                "type": "UTILITY"
+              },
+              {
+                "buildDirectory": "C:/Users/Matthew/Projects/music-player/build",
+                "fileGroups": [
+                  {
+                    "isGenerated": false,
+                    "sources": [
+                      "CMakeLists.txt"
+                    ]
+                  }
+                ],
+                "fullName": "ALL_BUILD",
+                "name": "ALL_BUILD",
+                "sourceDirectory": "C:/Users/Matthew/Projects/music-player",
+                "type": "UTILITY"
+              },
+              {
+                "buildDirectory": "C:/Users/Matthew/Projects/music-player/build",
+                "fileGroups": [
+                  {
+                    "isGenerated": true,
+                    "sources": [
+                      "build/CMakeFiles/openssl-1.0.2k",
+                      "build/CMakeFiles/01d73a133cac712ca9876768b1443a94/openssl-1.0.2k.rule",
+                      "build/CMakeFiles/cfc21692ef3774cc5ed4bb2472429a10/openssl-1.0.2k-complete.rule",
+                      "build/CMakeFiles/d58e17e5daf979a7e8d166e2fefd1e26/openssl-1.0.2k-install.rule",
+                      "build/CMakeFiles/d58e17e5daf979a7e8d166e2fefd1e26/openssl-1.0.2k-mkdir.rule",
+                      "build/CMakeFiles/d58e17e5daf979a7e8d166e2fefd1e26/openssl-1.0.2k-download.rule",
+                      "build/CMakeFiles/d58e17e5daf979a7e8d166e2fefd1e26/openssl-1.0.2k-update.rule",
+                      "build/CMakeFiles/d58e17e5daf979a7e8d166e2fefd1e26/openssl-1.0.2k-patch.rule",
+                      "build/CMakeFiles/d58e17e5daf979a7e8d166e2fefd1e26/openssl-1.0.2k-configure.rule",
+                      "build/CMakeFiles/d58e17e5daf979a7e8d166e2fefd1e26/openssl-1.0.2k-build.rule"
+                    ]
+                  },
+                  {
+                    "isGenerated": false,
+                    "sources": [
+                      "CMakeLists.txt"
+                    ]
+                  }
+                ],
+                "fullName": "openssl-1.0.2k",
+                "name": "openssl-1.0.2k",
+                "sourceDirectory": "C:/Users/Matthew/Projects/music-player",
+                "type": "UTILITY"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Release",
+        "projects": [
+          {
+            "buildDirectory": "C:/Users/Matthew/Projects/music-player/build",
+            "name": "music-manager-core",
+            "sourceDirectory": "C:/Users/Matthew/Projects/music-player",
+            "targets": [
+              {
+                "artifacts": [
+                  "C:/Users/Matthew/Projects/music-player/dist/bin/demo.exe",
+                  "C:/Users/Matthew/Projects/music-player/dist/lib/demo.lib",
+                  "C:/Users/Matthew/Projects/music-player/dist/bin/demo.pdb"
+                ],
+                "buildDirectory": "C:/Users/Matthew/Projects/music-player/build",
+                "fileGroups": [
+                  {
+                    "isGenerated": false,
+                    "sources": [
+                      "CMakeLists.txt"
+                    ]
+                  },
+                  {
+                    "compileFlags": "/DWIN32 /D_WINDOWS /W3 /GR /EHsc /MD /O2 /Ob2 /DNDEBUG  ",
+                    "includePath": [
+                      {
+                        "path": "C:/Users/Matthew/Projects/music-player/dist/include"
+                      },
+                      {
+                        "path": "C:/Users/Matthew/Projects/music-player/dist/include/uv"
+                      }
+                    ],
+                    "isGenerated": false,
+                    "language": "CXX",
+                    "sources": [
+                      "Core/src/demo.cpp"
+                    ]
+                  }
+                ],
+                "fullName": "demo.exe",
+                "linkFlags": "/machine:x64 /INCREMENTAL:NO /subsystem:console",
+                "linkLanguageFlags": "/DWIN32 /D_WINDOWS /W3 /GR /EHsc /MD /O2 /Ob2 /DNDEBUG",
+                "linkLibraries": "uWS.lib ws2_32.lib advapi32.lib iphlpapi.lib shell32.lib ..\\dist\\lib\\libuv.lib ..\\dist\\lib\\libeay32.lib ..\\dist\\lib\\ssleay32.lib ..\\dist\\lib\\zlibd.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib",
+                "linkPath": "-LIBPATH:C:\\Users\\Matthew\\Projects\\music-player\\dist\\lib  -LIBPATH:C:\\Users\\Matthew\\Projects\\music-player\\dist\\usr\\lib64",
+                "linkerLanguage": "CXX",
+                "name": "demo",
+                "sourceDirectory": "C:/Users/Matthew/Projects/music-player",
+                "type": "EXECUTABLE"
+              },
+              {
+                "buildDirectory": "C:/Users/Matthew/Projects/music-player/build",
+                "fileGroups": [
+                  {
+                    "isGenerated": true,
+                    "sources": [
+                      "build/CMakeFiles/uWebSockets-0.13.0a4",
+                      "build/CMakeFiles/01d73a133cac712ca9876768b1443a94/uWebSockets-0.13.0a4.rule",
+                      "build/CMakeFiles/cfc21692ef3774cc5ed4bb2472429a10/uWebSockets-0.13.0a4-complete.rule",
+                      "build/CMakeFiles/74620508dcadc10155c4598204e51f98/uWebSockets-0.13.0a4-install.rule",
+                      "build/CMakeFiles/74620508dcadc10155c4598204e51f98/uWebSockets-0.13.0a4-mkdir.rule",
+                      "build/CMakeFiles/74620508dcadc10155c4598204e51f98/uWebSockets-0.13.0a4-download.rule",
+                      "build/CMakeFiles/74620508dcadc10155c4598204e51f98/uWebSockets-0.13.0a4-update.rule",
+                      "build/CMakeFiles/74620508dcadc10155c4598204e51f98/uWebSockets-0.13.0a4-patch.rule",
+                      "build/CMakeFiles/74620508dcadc10155c4598204e51f98/uWebSockets-0.13.0a4-configure.rule",
+                      "build/CMakeFiles/74620508dcadc10155c4598204e51f98/uWebSockets-0.13.0a4-build.rule"
+                    ]
+                  },
+                  {
+                    "isGenerated": false,
+                    "sources": [
+                      "CMakeLists.txt"
+                    ]
+                  }
+                ],
+                "fullName": "uWebSockets-0.13.0a4",
+                "name": "uWebSockets-0.13.0a4",
+                "sourceDirectory": "C:/Users/Matthew/Projects/music-player",
+                "type": "UTILITY"
+              },
+              {
+                "buildDirectory": "C:/Users/Matthew/Projects/music-player/build",
+                "fileGroups": [
+                  {
+                    "isGenerated": true,
+                    "sources": [
+                      "build/CMakeFiles/zlib-1.2.11",
+                      "build/CMakeFiles/01d73a133cac712ca9876768b1443a94/zlib-1.2.11.rule",
+                      "build/CMakeFiles/cfc21692ef3774cc5ed4bb2472429a10/zlib-1.2.11-complete.rule",
+                      "build/CMakeFiles/2d166d9736c6081f7db04657dfbc5c4e/zlib-1.2.11-install.rule",
+                      "build/CMakeFiles/2d166d9736c6081f7db04657dfbc5c4e/zlib-1.2.11-mkdir.rule",
+                      "build/CMakeFiles/2d166d9736c6081f7db04657dfbc5c4e/zlib-1.2.11-download.rule",
+                      "build/CMakeFiles/2d166d9736c6081f7db04657dfbc5c4e/zlib-1.2.11-update.rule",
+                      "build/CMakeFiles/2d166d9736c6081f7db04657dfbc5c4e/zlib-1.2.11-patch.rule",
+                      "build/CMakeFiles/2d166d9736c6081f7db04657dfbc5c4e/zlib-1.2.11-configure.rule",
+                      "build/CMakeFiles/2d166d9736c6081f7db04657dfbc5c4e/zlib-1.2.11-build.rule"
+                    ]
+                  },
+                  {
+                    "isGenerated": false,
+                    "sources": [
+                      "CMakeLists.txt"
+                    ]
+                  }
+                ],
+                "fullName": "zlib-1.2.11",
+                "name": "zlib-1.2.11",
+                "sourceDirectory": "C:/Users/Matthew/Projects/music-player",
+                "type": "UTILITY"
+              },
+              {
+                "buildDirectory": "C:/Users/Matthew/Projects/music-player/build",
+                "fileGroups": [
+                  {
+                    "isGenerated": true,
+                    "sources": [
+                      "build/CMakeFiles/spdlog",
+                      "build/CMakeFiles/01d73a133cac712ca9876768b1443a94/spdlog.rule",
+                      "build/CMakeFiles/cfc21692ef3774cc5ed4bb2472429a10/spdlog-complete.rule",
+                      "build/CMakeFiles/4d6ce8cd9a8b5433f9ee684fc084447e/spdlog-install.rule",
+                      "build/CMakeFiles/4d6ce8cd9a8b5433f9ee684fc084447e/spdlog-mkdir.rule",
+                      "build/CMakeFiles/4d6ce8cd9a8b5433f9ee684fc084447e/spdlog-download.rule",
+                      "build/CMakeFiles/4d6ce8cd9a8b5433f9ee684fc084447e/spdlog-update.rule",
+                      "build/CMakeFiles/4d6ce8cd9a8b5433f9ee684fc084447e/spdlog-patch.rule",
+                      "build/CMakeFiles/4d6ce8cd9a8b5433f9ee684fc084447e/spdlog-configure.rule",
+                      "build/CMakeFiles/4d6ce8cd9a8b5433f9ee684fc084447e/spdlog-build.rule"
+                    ]
+                  },
+                  {
+                    "isGenerated": false,
+                    "sources": [
+                      "CMakeLists.txt"
+                    ]
+                  }
+                ],
+                "fullName": "spdlog",
+                "name": "spdlog",
+                "sourceDirectory": "C:/Users/Matthew/Projects/music-player",
+                "type": "UTILITY"
+              },
+              {
+                "buildDirectory": "C:/Users/Matthew/Projects/music-player/build",
+                "fileGroups": [
+                  {
+                    "isGenerated": true,
+                    "sources": [
+                      "build/CMakeFiles/libuv-1.11.0",
+                      "build/CMakeFiles/01d73a133cac712ca9876768b1443a94/libuv-1.11.0.rule",
+                      "build/CMakeFiles/cfc21692ef3774cc5ed4bb2472429a10/libuv-1.11.0-complete.rule",
+                      "build/CMakeFiles/b4e225435aee309534b256b3a044728b/libuv-1.11.0-install.rule",
+                      "build/CMakeFiles/b4e225435aee309534b256b3a044728b/libuv-1.11.0-mkdir.rule",
+                      "build/CMakeFiles/b4e225435aee309534b256b3a044728b/libuv-1.11.0-download.rule",
+                      "build/CMakeFiles/b4e225435aee309534b256b3a044728b/libuv-1.11.0-update.rule",
+                      "build/CMakeFiles/b4e225435aee309534b256b3a044728b/libuv-1.11.0-patch.rule",
+                      "build/CMakeFiles/b4e225435aee309534b256b3a044728b/libuv-1.11.0-configure.rule",
+                      "build/CMakeFiles/b4e225435aee309534b256b3a044728b/libuv-1.11.0-build.rule"
+                    ]
+                  },
+                  {
+                    "isGenerated": false,
+                    "sources": [
+                      "CMakeLists.txt"
+                    ]
+                  }
+                ],
+                "fullName": "libuv-1.11.0",
+                "name": "libuv-1.11.0",
+                "sourceDirectory": "C:/Users/Matthew/Projects/music-player",
+                "type": "UTILITY"
+              },
+              {
+                "buildDirectory": "C:/Users/Matthew/Projects/music-player/build",
+                "fileGroups": [
+                  {
+                    "isGenerated": true,
+                    "sources": [
+                      "build/CMakeFiles/01d73a133cac712ca9876768b1443a94/generate.stamp.rule"
+                    ]
+                  }
+                ],
+                "fullName": "ZERO_CHECK",
+                "name": "ZERO_CHECK",
+                "sourceDirectory": "C:/Users/Matthew/Projects/music-player",
+                "type": "UTILITY"
+              },
+              {
+                "buildDirectory": "C:/Users/Matthew/Projects/music-player/build",
+                "fileGroups": [
+                  {
+                    "isGenerated": false,
+                    "sources": [
+                      "CMakeLists.txt"
+                    ]
+                  }
+                ],
+                "fullName": "ALL_BUILD",
+                "name": "ALL_BUILD",
+                "sourceDirectory": "C:/Users/Matthew/Projects/music-player",
+                "type": "UTILITY"
+              },
+              {
+                "buildDirectory": "C:/Users/Matthew/Projects/music-player/build",
+                "fileGroups": [
+                  {
+                    "isGenerated": true,
+                    "sources": [
+                      "build/CMakeFiles/openssl-1.0.2k",
+                      "build/CMakeFiles/01d73a133cac712ca9876768b1443a94/openssl-1.0.2k.rule",
+                      "build/CMakeFiles/cfc21692ef3774cc5ed4bb2472429a10/openssl-1.0.2k-complete.rule",
+                      "build/CMakeFiles/d58e17e5daf979a7e8d166e2fefd1e26/openssl-1.0.2k-install.rule",
+                      "build/CMakeFiles/d58e17e5daf979a7e8d166e2fefd1e26/openssl-1.0.2k-mkdir.rule",
+                      "build/CMakeFiles/d58e17e5daf979a7e8d166e2fefd1e26/openssl-1.0.2k-download.rule",
+                      "build/CMakeFiles/d58e17e5daf979a7e8d166e2fefd1e26/openssl-1.0.2k-update.rule",
+                      "build/CMakeFiles/d58e17e5daf979a7e8d166e2fefd1e26/openssl-1.0.2k-patch.rule",
+                      "build/CMakeFiles/d58e17e5daf979a7e8d166e2fefd1e26/openssl-1.0.2k-configure.rule",
+                      "build/CMakeFiles/d58e17e5daf979a7e8d166e2fefd1e26/openssl-1.0.2k-build.rule"
+                    ]
+                  },
+                  {
+                    "isGenerated": false,
+                    "sources": [
+                      "CMakeLists.txt"
+                    ]
+                  }
+                ],
+                "fullName": "openssl-1.0.2k",
+                "name": "openssl-1.0.2k",
+                "sourceDirectory": "C:/Users/Matthew/Projects/music-player",
+                "type": "UTILITY"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "MinSizeRel",
+        "projects": [
+          {
+            "buildDirectory": "C:/Users/Matthew/Projects/music-player/build",
+            "name": "music-manager-core",
+            "sourceDirectory": "C:/Users/Matthew/Projects/music-player",
+            "targets": [
+              {
+                "artifacts": [
+                  "C:/Users/Matthew/Projects/music-player/dist/bin/MinSizeRel/demo.exe",
+                  "C:/Users/Matthew/Projects/music-player/dist/lib/MinSizeRel/demo.lib",
+                  "C:/Users/Matthew/Projects/music-player/dist/bin/MinSizeRel/demo.pdb"
+                ],
+                "buildDirectory": "C:/Users/Matthew/Projects/music-player/build",
+                "fileGroups": [
+                  {
+                    "compileFlags": "/DWIN32 /D_WINDOWS /W3 /GR /EHsc /MD /O1 /Ob1 /DNDEBUG  ",
+                    "includePath": [
+                      {
+                        "path": "C:/Users/Matthew/Projects/music-player/dist/include"
+                      },
+                      {
+                        "path": "C:/Users/Matthew/Projects/music-player/dist/include/uv"
+                      }
+                    ],
+                    "isGenerated": false,
+                    "language": "CXX",
+                    "sources": [
+                      "Core/src/demo.cpp"
+                    ]
+                  },
+                  {
+                    "isGenerated": false,
+                    "sources": [
+                      "CMakeLists.txt"
+                    ]
+                  }
+                ],
+                "fullName": "demo.exe",
+                "linkFlags": "/machine:x64 /INCREMENTAL:NO /subsystem:console",
+                "linkLanguageFlags": "/DWIN32 /D_WINDOWS /W3 /GR /EHsc /MD /O1 /Ob1 /DNDEBUG",
+                "linkLibraries": "uWS.lib ws2_32.lib advapi32.lib iphlpapi.lib shell32.lib ..\\dist\\lib\\libuv.lib ..\\dist\\lib\\libeay32.lib ..\\dist\\lib\\ssleay32.lib ..\\dist\\lib\\zlibd.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib",
+                "linkPath": "-LIBPATH:C:\\Users\\Matthew\\Projects\\music-player\\dist\\lib  -LIBPATH:C:\\Users\\Matthew\\Projects\\music-player\\dist\\usr\\lib64",
+                "linkerLanguage": "CXX",
+                "name": "demo",
+                "sourceDirectory": "C:/Users/Matthew/Projects/music-player",
+                "type": "EXECUTABLE"
+              },
+              {
+                "buildDirectory": "C:/Users/Matthew/Projects/music-player/build",
+                "fileGroups": [
+                  {
+                    "isGenerated": true,
+                    "sources": [
+                      "build/CMakeFiles/uWebSockets-0.13.0a4",
+                      "build/CMakeFiles/01d73a133cac712ca9876768b1443a94/uWebSockets-0.13.0a4.rule",
+                      "build/CMakeFiles/cfc21692ef3774cc5ed4bb2472429a10/uWebSockets-0.13.0a4-complete.rule",
+                      "build/CMakeFiles/74620508dcadc10155c4598204e51f98/uWebSockets-0.13.0a4-install.rule",
+                      "build/CMakeFiles/74620508dcadc10155c4598204e51f98/uWebSockets-0.13.0a4-mkdir.rule",
+                      "build/CMakeFiles/74620508dcadc10155c4598204e51f98/uWebSockets-0.13.0a4-download.rule",
+                      "build/CMakeFiles/74620508dcadc10155c4598204e51f98/uWebSockets-0.13.0a4-update.rule",
+                      "build/CMakeFiles/74620508dcadc10155c4598204e51f98/uWebSockets-0.13.0a4-patch.rule",
+                      "build/CMakeFiles/74620508dcadc10155c4598204e51f98/uWebSockets-0.13.0a4-configure.rule",
+                      "build/CMakeFiles/74620508dcadc10155c4598204e51f98/uWebSockets-0.13.0a4-build.rule"
+                    ]
+                  },
+                  {
+                    "isGenerated": false,
+                    "sources": [
+                      "CMakeLists.txt"
+                    ]
+                  }
+                ],
+                "fullName": "uWebSockets-0.13.0a4",
+                "name": "uWebSockets-0.13.0a4",
+                "sourceDirectory": "C:/Users/Matthew/Projects/music-player",
+                "type": "UTILITY"
+              },
+              {
+                "buildDirectory": "C:/Users/Matthew/Projects/music-player/build",
+                "fileGroups": [
+                  {
+                    "isGenerated": true,
+                    "sources": [
+                      "build/CMakeFiles/zlib-1.2.11",
+                      "build/CMakeFiles/01d73a133cac712ca9876768b1443a94/zlib-1.2.11.rule",
+                      "build/CMakeFiles/cfc21692ef3774cc5ed4bb2472429a10/zlib-1.2.11-complete.rule",
+                      "build/CMakeFiles/2d166d9736c6081f7db04657dfbc5c4e/zlib-1.2.11-install.rule",
+                      "build/CMakeFiles/2d166d9736c6081f7db04657dfbc5c4e/zlib-1.2.11-mkdir.rule",
+                      "build/CMakeFiles/2d166d9736c6081f7db04657dfbc5c4e/zlib-1.2.11-download.rule",
+                      "build/CMakeFiles/2d166d9736c6081f7db04657dfbc5c4e/zlib-1.2.11-update.rule",
+                      "build/CMakeFiles/2d166d9736c6081f7db04657dfbc5c4e/zlib-1.2.11-patch.rule",
+                      "build/CMakeFiles/2d166d9736c6081f7db04657dfbc5c4e/zlib-1.2.11-configure.rule",
+                      "build/CMakeFiles/2d166d9736c6081f7db04657dfbc5c4e/zlib-1.2.11-build.rule"
+                    ]
+                  },
+                  {
+                    "isGenerated": false,
+                    "sources": [
+                      "CMakeLists.txt"
+                    ]
+                  }
+                ],
+                "fullName": "zlib-1.2.11",
+                "name": "zlib-1.2.11",
+                "sourceDirectory": "C:/Users/Matthew/Projects/music-player",
+                "type": "UTILITY"
+              },
+              {
+                "buildDirectory": "C:/Users/Matthew/Projects/music-player/build",
+                "fileGroups": [
+                  {
+                    "isGenerated": true,
+                    "sources": [
+                      "build/CMakeFiles/spdlog",
+                      "build/CMakeFiles/01d73a133cac712ca9876768b1443a94/spdlog.rule",
+                      "build/CMakeFiles/cfc21692ef3774cc5ed4bb2472429a10/spdlog-complete.rule",
+                      "build/CMakeFiles/4d6ce8cd9a8b5433f9ee684fc084447e/spdlog-install.rule",
+                      "build/CMakeFiles/4d6ce8cd9a8b5433f9ee684fc084447e/spdlog-mkdir.rule",
+                      "build/CMakeFiles/4d6ce8cd9a8b5433f9ee684fc084447e/spdlog-download.rule",
+                      "build/CMakeFiles/4d6ce8cd9a8b5433f9ee684fc084447e/spdlog-update.rule",
+                      "build/CMakeFiles/4d6ce8cd9a8b5433f9ee684fc084447e/spdlog-patch.rule",
+                      "build/CMakeFiles/4d6ce8cd9a8b5433f9ee684fc084447e/spdlog-configure.rule",
+                      "build/CMakeFiles/4d6ce8cd9a8b5433f9ee684fc084447e/spdlog-build.rule"
+                    ]
+                  },
+                  {
+                    "isGenerated": false,
+                    "sources": [
+                      "CMakeLists.txt"
+                    ]
+                  }
+                ],
+                "fullName": "spdlog",
+                "name": "spdlog",
+                "sourceDirectory": "C:/Users/Matthew/Projects/music-player",
+                "type": "UTILITY"
+              },
+              {
+                "buildDirectory": "C:/Users/Matthew/Projects/music-player/build",
+                "fileGroups": [
+                  {
+                    "isGenerated": true,
+                    "sources": [
+                      "build/CMakeFiles/libuv-1.11.0",
+                      "build/CMakeFiles/01d73a133cac712ca9876768b1443a94/libuv-1.11.0.rule",
+                      "build/CMakeFiles/cfc21692ef3774cc5ed4bb2472429a10/libuv-1.11.0-complete.rule",
+                      "build/CMakeFiles/b4e225435aee309534b256b3a044728b/libuv-1.11.0-install.rule",
+                      "build/CMakeFiles/b4e225435aee309534b256b3a044728b/libuv-1.11.0-mkdir.rule",
+                      "build/CMakeFiles/b4e225435aee309534b256b3a044728b/libuv-1.11.0-download.rule",
+                      "build/CMakeFiles/b4e225435aee309534b256b3a044728b/libuv-1.11.0-update.rule",
+                      "build/CMakeFiles/b4e225435aee309534b256b3a044728b/libuv-1.11.0-patch.rule",
+                      "build/CMakeFiles/b4e225435aee309534b256b3a044728b/libuv-1.11.0-configure.rule",
+                      "build/CMakeFiles/b4e225435aee309534b256b3a044728b/libuv-1.11.0-build.rule"
+                    ]
+                  },
+                  {
+                    "isGenerated": false,
+                    "sources": [
+                      "CMakeLists.txt"
+                    ]
+                  }
+                ],
+                "fullName": "libuv-1.11.0",
+                "name": "libuv-1.11.0",
+                "sourceDirectory": "C:/Users/Matthew/Projects/music-player",
+                "type": "UTILITY"
+              },
+              {
+                "buildDirectory": "C:/Users/Matthew/Projects/music-player/build",
+                "fileGroups": [
+                  {
+                    "isGenerated": true,
+                    "sources": [
+                      "build/CMakeFiles/01d73a133cac712ca9876768b1443a94/generate.stamp.rule"
+                    ]
+                  }
+                ],
+                "fullName": "ZERO_CHECK",
+                "name": "ZERO_CHECK",
+                "sourceDirectory": "C:/Users/Matthew/Projects/music-player",
+                "type": "UTILITY"
+              },
+              {
+                "buildDirectory": "C:/Users/Matthew/Projects/music-player/build",
+                "fileGroups": [
+                  {
+                    "isGenerated": false,
+                    "sources": [
+                      "CMakeLists.txt"
+                    ]
+                  }
+                ],
+                "fullName": "ALL_BUILD",
+                "name": "ALL_BUILD",
+                "sourceDirectory": "C:/Users/Matthew/Projects/music-player",
+                "type": "UTILITY"
+              },
+              {
+                "buildDirectory": "C:/Users/Matthew/Projects/music-player/build",
+                "fileGroups": [
+                  {
+                    "isGenerated": true,
+                    "sources": [
+                      "build/CMakeFiles/openssl-1.0.2k",
+                      "build/CMakeFiles/01d73a133cac712ca9876768b1443a94/openssl-1.0.2k.rule",
+                      "build/CMakeFiles/cfc21692ef3774cc5ed4bb2472429a10/openssl-1.0.2k-complete.rule",
+                      "build/CMakeFiles/d58e17e5daf979a7e8d166e2fefd1e26/openssl-1.0.2k-install.rule",
+                      "build/CMakeFiles/d58e17e5daf979a7e8d166e2fefd1e26/openssl-1.0.2k-mkdir.rule",
+                      "build/CMakeFiles/d58e17e5daf979a7e8d166e2fefd1e26/openssl-1.0.2k-download.rule",
+                      "build/CMakeFiles/d58e17e5daf979a7e8d166e2fefd1e26/openssl-1.0.2k-update.rule",
+                      "build/CMakeFiles/d58e17e5daf979a7e8d166e2fefd1e26/openssl-1.0.2k-patch.rule",
+                      "build/CMakeFiles/d58e17e5daf979a7e8d166e2fefd1e26/openssl-1.0.2k-configure.rule",
+                      "build/CMakeFiles/d58e17e5daf979a7e8d166e2fefd1e26/openssl-1.0.2k-build.rule"
+                    ]
+                  },
+                  {
+                    "isGenerated": false,
+                    "sources": [
+                      "CMakeLists.txt"
+                    ]
+                  }
+                ],
+                "fullName": "openssl-1.0.2k",
+                "name": "openssl-1.0.2k",
+                "sourceDirectory": "C:/Users/Matthew/Projects/music-player",
+                "type": "UTILITY"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "RelWithDebInfo",
+        "projects": [
+          {
+            "buildDirectory": "C:/Users/Matthew/Projects/music-player/build",
+            "name": "music-manager-core",
+            "sourceDirectory": "C:/Users/Matthew/Projects/music-player",
+            "targets": [
+              {
+                "artifacts": [
+                  "C:/Users/Matthew/Projects/music-player/dist/bin/RelWithDebInfo/demo.exe",
+                  "C:/Users/Matthew/Projects/music-player/dist/lib/RelWithDebInfo/demo.lib",
+                  "C:/Users/Matthew/Projects/music-player/dist/bin/RelWithDebInfo/demo.pdb"
+                ],
+                "buildDirectory": "C:/Users/Matthew/Projects/music-player/build",
+                "fileGroups": [
+                  {
+                    "compileFlags": "/DWIN32 /D_WINDOWS /W3 /GR /EHsc /MD /Zi /O2 /Ob1 /DNDEBUG  ",
+                    "includePath": [
+                      {
+                        "path": "C:/Users/Matthew/Projects/music-player/dist/include"
+                      },
+                      {
+                        "path": "C:/Users/Matthew/Projects/music-player/dist/include/uv"
+                      }
+                    ],
+                    "isGenerated": false,
+                    "language": "CXX",
+                    "sources": [
+                      "Core/src/demo.cpp"
+                    ]
+                  },
+                  {
+                    "isGenerated": false,
+                    "sources": [
+                      "CMakeLists.txt"
+                    ]
+                  }
+                ],
+                "fullName": "demo.exe",
+                "linkFlags": "/machine:x64 /debug /INCREMENTAL /subsystem:console",
+                "linkLanguageFlags": "/DWIN32 /D_WINDOWS /W3 /GR /EHsc /MD /Zi /O2 /Ob1 /DNDEBUG",
+                "linkLibraries": "uWS.lib ws2_32.lib advapi32.lib iphlpapi.lib shell32.lib ..\\dist\\lib\\libuv.lib ..\\dist\\lib\\libeay32.lib ..\\dist\\lib\\ssleay32.lib ..\\dist\\lib\\zlibd.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib",
+                "linkPath": "-LIBPATH:C:\\Users\\Matthew\\Projects\\music-player\\dist\\lib  -LIBPATH:C:\\Users\\Matthew\\Projects\\music-player\\dist\\usr\\lib64",
+                "linkerLanguage": "CXX",
+                "name": "demo",
+                "sourceDirectory": "C:/Users/Matthew/Projects/music-player",
+                "type": "EXECUTABLE"
+              },
+              {
+                "buildDirectory": "C:/Users/Matthew/Projects/music-player/build",
+                "fileGroups": [
+                  {
+                    "isGenerated": true,
+                    "sources": [
+                      "build/CMakeFiles/uWebSockets-0.13.0a4",
+                      "build/CMakeFiles/01d73a133cac712ca9876768b1443a94/uWebSockets-0.13.0a4.rule",
+                      "build/CMakeFiles/cfc21692ef3774cc5ed4bb2472429a10/uWebSockets-0.13.0a4-complete.rule",
+                      "build/CMakeFiles/74620508dcadc10155c4598204e51f98/uWebSockets-0.13.0a4-install.rule",
+                      "build/CMakeFiles/74620508dcadc10155c4598204e51f98/uWebSockets-0.13.0a4-mkdir.rule",
+                      "build/CMakeFiles/74620508dcadc10155c4598204e51f98/uWebSockets-0.13.0a4-download.rule",
+                      "build/CMakeFiles/74620508dcadc10155c4598204e51f98/uWebSockets-0.13.0a4-update.rule",
+                      "build/CMakeFiles/74620508dcadc10155c4598204e51f98/uWebSockets-0.13.0a4-patch.rule",
+                      "build/CMakeFiles/74620508dcadc10155c4598204e51f98/uWebSockets-0.13.0a4-configure.rule",
+                      "build/CMakeFiles/74620508dcadc10155c4598204e51f98/uWebSockets-0.13.0a4-build.rule"
+                    ]
+                  },
+                  {
+                    "isGenerated": false,
+                    "sources": [
+                      "CMakeLists.txt"
+                    ]
+                  }
+                ],
+                "fullName": "uWebSockets-0.13.0a4",
+                "name": "uWebSockets-0.13.0a4",
+                "sourceDirectory": "C:/Users/Matthew/Projects/music-player",
+                "type": "UTILITY"
+              },
+              {
+                "buildDirectory": "C:/Users/Matthew/Projects/music-player/build",
+                "fileGroups": [
+                  {
+                    "isGenerated": true,
+                    "sources": [
+                      "build/CMakeFiles/zlib-1.2.11",
+                      "build/CMakeFiles/01d73a133cac712ca9876768b1443a94/zlib-1.2.11.rule",
+                      "build/CMakeFiles/cfc21692ef3774cc5ed4bb2472429a10/zlib-1.2.11-complete.rule",
+                      "build/CMakeFiles/2d166d9736c6081f7db04657dfbc5c4e/zlib-1.2.11-install.rule",
+                      "build/CMakeFiles/2d166d9736c6081f7db04657dfbc5c4e/zlib-1.2.11-mkdir.rule",
+                      "build/CMakeFiles/2d166d9736c6081f7db04657dfbc5c4e/zlib-1.2.11-download.rule",
+                      "build/CMakeFiles/2d166d9736c6081f7db04657dfbc5c4e/zlib-1.2.11-update.rule",
+                      "build/CMakeFiles/2d166d9736c6081f7db04657dfbc5c4e/zlib-1.2.11-patch.rule",
+                      "build/CMakeFiles/2d166d9736c6081f7db04657dfbc5c4e/zlib-1.2.11-configure.rule",
+                      "build/CMakeFiles/2d166d9736c6081f7db04657dfbc5c4e/zlib-1.2.11-build.rule"
+                    ]
+                  },
+                  {
+                    "isGenerated": false,
+                    "sources": [
+                      "CMakeLists.txt"
+                    ]
+                  }
+                ],
+                "fullName": "zlib-1.2.11",
+                "name": "zlib-1.2.11",
+                "sourceDirectory": "C:/Users/Matthew/Projects/music-player",
+                "type": "UTILITY"
+              },
+              {
+                "buildDirectory": "C:/Users/Matthew/Projects/music-player/build",
+                "fileGroups": [
+                  {
+                    "isGenerated": true,
+                    "sources": [
+                      "build/CMakeFiles/spdlog",
+                      "build/CMakeFiles/01d73a133cac712ca9876768b1443a94/spdlog.rule",
+                      "build/CMakeFiles/cfc21692ef3774cc5ed4bb2472429a10/spdlog-complete.rule",
+                      "build/CMakeFiles/4d6ce8cd9a8b5433f9ee684fc084447e/spdlog-install.rule",
+                      "build/CMakeFiles/4d6ce8cd9a8b5433f9ee684fc084447e/spdlog-mkdir.rule",
+                      "build/CMakeFiles/4d6ce8cd9a8b5433f9ee684fc084447e/spdlog-download.rule",
+                      "build/CMakeFiles/4d6ce8cd9a8b5433f9ee684fc084447e/spdlog-update.rule",
+                      "build/CMakeFiles/4d6ce8cd9a8b5433f9ee684fc084447e/spdlog-patch.rule",
+                      "build/CMakeFiles/4d6ce8cd9a8b5433f9ee684fc084447e/spdlog-configure.rule",
+                      "build/CMakeFiles/4d6ce8cd9a8b5433f9ee684fc084447e/spdlog-build.rule"
+                    ]
+                  },
+                  {
+                    "isGenerated": false,
+                    "sources": [
+                      "CMakeLists.txt"
+                    ]
+                  }
+                ],
+                "fullName": "spdlog",
+                "name": "spdlog",
+                "sourceDirectory": "C:/Users/Matthew/Projects/music-player",
+                "type": "UTILITY"
+              },
+              {
+                "buildDirectory": "C:/Users/Matthew/Projects/music-player/build",
+                "fileGroups": [
+                  {
+                    "isGenerated": true,
+                    "sources": [
+                      "build/CMakeFiles/libuv-1.11.0",
+                      "build/CMakeFiles/01d73a133cac712ca9876768b1443a94/libuv-1.11.0.rule",
+                      "build/CMakeFiles/cfc21692ef3774cc5ed4bb2472429a10/libuv-1.11.0-complete.rule",
+                      "build/CMakeFiles/b4e225435aee309534b256b3a044728b/libuv-1.11.0-install.rule",
+                      "build/CMakeFiles/b4e225435aee309534b256b3a044728b/libuv-1.11.0-mkdir.rule",
+                      "build/CMakeFiles/b4e225435aee309534b256b3a044728b/libuv-1.11.0-download.rule",
+                      "build/CMakeFiles/b4e225435aee309534b256b3a044728b/libuv-1.11.0-update.rule",
+                      "build/CMakeFiles/b4e225435aee309534b256b3a044728b/libuv-1.11.0-patch.rule",
+                      "build/CMakeFiles/b4e225435aee309534b256b3a044728b/libuv-1.11.0-configure.rule",
+                      "build/CMakeFiles/b4e225435aee309534b256b3a044728b/libuv-1.11.0-build.rule"
+                    ]
+                  },
+                  {
+                    "isGenerated": false,
+                    "sources": [
+                      "CMakeLists.txt"
+                    ]
+                  }
+                ],
+                "fullName": "libuv-1.11.0",
+                "name": "libuv-1.11.0",
+                "sourceDirectory": "C:/Users/Matthew/Projects/music-player",
+                "type": "UTILITY"
+              },
+              {
+                "buildDirectory": "C:/Users/Matthew/Projects/music-player/build",
+                "fileGroups": [
+                  {
+                    "isGenerated": true,
+                    "sources": [
+                      "build/CMakeFiles/01d73a133cac712ca9876768b1443a94/generate.stamp.rule"
+                    ]
+                  }
+                ],
+                "fullName": "ZERO_CHECK",
+                "name": "ZERO_CHECK",
+                "sourceDirectory": "C:/Users/Matthew/Projects/music-player",
+                "type": "UTILITY"
+              },
+              {
+                "buildDirectory": "C:/Users/Matthew/Projects/music-player/build",
+                "fileGroups": [
+                  {
+                    "isGenerated": false,
+                    "sources": [
+                      "CMakeLists.txt"
+                    ]
+                  }
+                ],
+                "fullName": "ALL_BUILD",
+                "name": "ALL_BUILD",
+                "sourceDirectory": "C:/Users/Matthew/Projects/music-player",
+                "type": "UTILITY"
+              },
+              {
+                "buildDirectory": "C:/Users/Matthew/Projects/music-player/build",
+                "fileGroups": [
+                  {
+                    "isGenerated": true,
+                    "sources": [
+                      "build/CMakeFiles/openssl-1.0.2k",
+                      "build/CMakeFiles/01d73a133cac712ca9876768b1443a94/openssl-1.0.2k.rule",
+                      "build/CMakeFiles/cfc21692ef3774cc5ed4bb2472429a10/openssl-1.0.2k-complete.rule",
+                      "build/CMakeFiles/d58e17e5daf979a7e8d166e2fefd1e26/openssl-1.0.2k-install.rule",
+                      "build/CMakeFiles/d58e17e5daf979a7e8d166e2fefd1e26/openssl-1.0.2k-mkdir.rule",
+                      "build/CMakeFiles/d58e17e5daf979a7e8d166e2fefd1e26/openssl-1.0.2k-download.rule",
+                      "build/CMakeFiles/d58e17e5daf979a7e8d166e2fefd1e26/openssl-1.0.2k-update.rule",
+                      "build/CMakeFiles/d58e17e5daf979a7e8d166e2fefd1e26/openssl-1.0.2k-patch.rule",
+                      "build/CMakeFiles/d58e17e5daf979a7e8d166e2fefd1e26/openssl-1.0.2k-configure.rule",
+                      "build/CMakeFiles/d58e17e5daf979a7e8d166e2fefd1e26/openssl-1.0.2k-build.rule"
+                    ]
+                  },
+                  {
+                    "isGenerated": false,
+                    "sources": [
+                      "CMakeLists.txt"
+                    ]
+                  }
+                ],
+                "fullName": "openssl-1.0.2k",
+                "name": "openssl-1.0.2k",
+                "sourceDirectory": "C:/Users/Matthew/Projects/music-player",
+                "type": "UTILITY"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "cookie": "0.06340749032010717",
+    "inReplyTo": "codemodel",
+    "type": "reply"
+  }
 }

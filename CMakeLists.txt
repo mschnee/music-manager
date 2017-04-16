@@ -8,14 +8,13 @@ file(MAKE_DIRECTORY ${EXTERNAL_PREFIX})
 set_directory_properties(PROPERTIES EP_BASE ${EXTERNAL_PREFIX})
 
 ## Import the externals
-include(./.cmake/libuv.cmake)
-include(./.cmake/openssl.cmake)
-include(./.cmake/zlib.cmake)
-include(./.cmake/uwebsockets.cmake)
-include(./.cmake/spdlog.cmake)
+if (WIN32)
+    include(./.cmake/win32.cmake)
+endif()
 ## Resume please
 
 include_directories(${CMAKE_INSTALL_PREFIX}/include ${LIBUV_INCLUDE_DIR})
+MESSAGE(INFO ${LIBUV_INCLUDE_DIR})
 set(SOURCES)
 set(SOURCES ${SOURCES} "Core/src/demo.cpp")
 
@@ -30,8 +29,8 @@ add_executable(demo ${SOURCES})
 # Setup targets
 # ==============================================================================
 if (WIN32)
-    set(APP_DEPENDENCIES uWebSockets-0.13.0a4 zlib-1.2.11 openssl-1.0.2k libuv-1.11.0 spdlog)
-    set(APP_LIBRARIES 
+    set(APP_DEPENDENCIES uWebSockets-0.14.2 zlib-1.2.11 openssl-1.0.2k libuv-1.11.0 spdlog)
+    set(APP_LIBRARIES
         uWS ws2_32 advapi32 iphlpapi shell32
         ${LIBUV_LIBRARY}
         ${CMAKE_INSTALL_PREFIX}/lib/libeay32.lib
@@ -41,7 +40,7 @@ if (WIN32)
 else(UNIX AND APPLE)
     find_package(OpenSSL REQUIRED)
     find_package(ZLIB REQUIRED)
-    set(APP_DEPENDENCIES uWebSockets-0.13.0a4 libuv-1.11.0 spdlog)
+    set(APP_DEPENDENCIES uWebSockets-0.14.2 libuv-1.11.0 spdlog)
     set(APP_LIBRARIES uWS
         ${CMAKE_INSTALL_PREFIX}/lib/libuv.dylib
         ${OPENSSL_SSL_LIBRARY}

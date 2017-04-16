@@ -1,4 +1,4 @@
-set (UV_INSTALL_SCRIPT .cmake/libuv_install.cmake)
+set (UV_INSTALL_SCRIPT ${CMAKE_SOURCE_DIR}/.cmake/windows/libuv_install.cmake)
 ExternalProject_Add(
     libuv-1.11.0
     GIT_REPOSITORY https://github.com/libuv/libuv.git
