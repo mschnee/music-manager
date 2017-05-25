@@ -1,1 +1,0 @@
-file (COPY ${SPD_BUILD_DIR}/include/ DESTINATION ${CMAKE_INSTALL_PREFIX}/include/)
