@@ -5,10 +5,10 @@
             "name": "C++ Launch (Windows)",
             "type": "cppvsdbg",
             "request": "launch",
-            "program": "${workspaceRoot}/dist/bin/demo.exe",
+            "program": "${workspaceRoot}/build/Core/Debug/MusicManager.exe",
             "args": [],
             "stopAtEntry": false,
-            "cwd": "${workspaceRoot}",
+            "cwd": "${workspaceRoot}/build/Core/Debug/",
             "environment": [],
             "externalConsole": false
         },
