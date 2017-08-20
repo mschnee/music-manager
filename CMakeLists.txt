@@ -1,13 +1,18 @@
 cmake_minimum_required(VERSION 3.8)
-set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_CXX_EXTENSIONS OFF)
 project(music-manager)
+enable_testing()
+set(CTEST_OUTPUT_ON_FAILURE 1)
 
-find_package(fmt REQUIRED)
 find_package(spdlog REQUIRED)
 
 OPTION(DIST_DEV "Install into ./dist for development" ON)
 OPTION(BUILD_UI "Build the UI component" OFF)
 OPTION(BUILD_CORE "Build the Core component" ON)
+OPTION(PRODUCTION "Create a production build" OFF)
+OPTION(BUILD_TESTS "Build and run tests" ON)
 
 find_package(ZLIB REQUIRED)
 find_package(OpenSSL REQUIRED)
